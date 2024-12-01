@@ -1,0 +1,39 @@
+.nav {
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(87, 86, 86, 0.5);
+    box-sizing: border-box;
+    /* when width value is given and a padding value is also present, css tries to
+    maintain the width value while adding the padding at the same time, resulting
+    in a box with a width that is the sum of the width and the padding. To avoid this
+    box-sizing: border-box is used to tell css that it is ok not to maintain the width
+    of the box. This way, the padding is included in, not added on top of, the total width */
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    position: relative;
+    color: #2e363e; 
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 15px;
+    bottom: 15px; 
+}
